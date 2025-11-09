@@ -29,6 +29,10 @@ It takes a flat tree object (key → children array) as input and renders a prop
 
 ---
 
+## **Live Demo:** [https://ashfaque-03.github.io/Hierarchical-Tree/](https://ashfaque-03.github.io/Hierarchical-Tree/)
+
+---
+
 ## How to Run
 ```bash
 git clone https://github.com/Ashfaque-03/Hierarchical-Tree.git
