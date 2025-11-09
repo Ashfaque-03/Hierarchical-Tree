@@ -1,9 +1,7 @@
 # 🧩 Hierarchical Tree in Angular
 
 ### Author
-**Name:** Abdul Ashfaque M  
-**Phone:** +91 7356566616  
-**UPI ID:** [Your UPI ID]
+**Name:** Abdul Ashfaque M
 
 ---
 
