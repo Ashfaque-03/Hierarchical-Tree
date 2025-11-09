@@ -1,0 +1,11 @@
+<main>
+    <!-- Section describing the tree -->
+    <section aria-labelledby="tree-heading">
+        <h2 id="hierarchical-tree-heading">Hierarchical Tree</h2>
+
+        <!-- Wrapper for the tree component -->
+        <div role="tree" aria-label="Organizational structure of nodes starting from root node A">
+            <app-tree-view [tree]="tree" [rootKey]="'a'"></app-tree-view>
+        </div>
+    </section>
+</main>

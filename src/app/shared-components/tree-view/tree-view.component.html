@@ -1,0 +1,18 @@
+<!-- Only render when root node is available -->
+<ul *ngIf="rootNode?.name" class="tree-root" role="tree">
+    <ng-container *ngTemplateOutlet="renderNode; context: { node: rootNode, level: 1, isRoot: true }"></ng-container>
+</ul>
+
+<!-- Recursive template for nodes -->
+<ng-template #renderNode let-node="node" let-level="level" let-isRoot="isRoot">
+    <li *ngIf="node?.name" role="treeitem" [attr.aria-level]="level"
+        [attr.aria-expanded]="node?.children?.length > 0">
+        <ng-container *ngIf="!isRoot">- </ng-container>{{ node.name }}
+        <ul *ngIf="node?.children?.length > 0" role="group">
+            <ng-container *ngFor="let child of node.children">
+                <ng-container
+                    *ngTemplateOutlet="renderNode; context: { node: child, level: level + 1, isRoot: false }"></ng-container>
+            </ng-container>
+        </ul>
+    </li>
+</ng-template>
